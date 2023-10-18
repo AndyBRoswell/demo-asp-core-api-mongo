@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace main.Models.work.video {
-    public class @base {
+    public class video : work {
         [BsonElement("director")] public string? director { get; set; }
         [BsonElement("second_unit_or_assistant_director")] public string? second_unit_or_assistant_director { get; set; }
         [BsonElement("writer")] public string? writer { get; set; }

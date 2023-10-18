@@ -1,7 +1,7 @@
 ﻿namespace main.Models.work {
     using MongoDB.Bson;
     using MongoDB.Bson.Serialization.Attributes;
-    public class @base {
+    public class work {
         [BsonId][BsonRepresentation(BsonType.ObjectId)] public string? _id { get; set; }
         [BsonElement("title")] public string? title { get; set; }
         [BsonElement("genre")] public string? genre { get; set; }

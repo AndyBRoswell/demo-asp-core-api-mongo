@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace main.Models.work.audio {
-    public class @base: work.@base {
+    public class audio: work {
         [BsonElement("artist")] public string? artist { get; set; }
         [BsonElement("songwriter")] public string? songwriter { get; set; }
         [BsonElement("performer")] public string? performer { get; set; }

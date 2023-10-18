@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace main.Controllers {
     [ApiController]
-    [Route("work")]
-    public class work_controller : Controller {
+    [Route("video")]
+    public class video_controller : Controller {
         private readonly work_service _work_service;
-        public work_controller(work_service work_service) => _work_service = work_service;
+        public video_controller(work_service work_service) => _work_service = work_service;
         [HttpGet] public async Task<List<work>> get() => await _work_service.get_async();
         [HttpGet("{id:length(24)}")] public async Task<ActionResult<work>> get(string id) {
             var work = await _work_service.get_async(id);

@@ -7,6 +7,7 @@ namespace main.Models.work.video {
         [BsonElement("writer")] public string? writer { get; set; }
         [BsonElement("script_and_continuity")] public string? script_and_continuity { get; set; }
         [BsonElement("cast")] public string? cast { get; set; }
+        [BsonElement("casting_department")] public string? casting_department { get; set; }
         [BsonElement("producer")] public string? producer { get; set; }
         [BsonElement("production_design")] public string? production_design { get; set; }
         [BsonElement("production_management")] public string? production_management { get; set; }
@@ -37,5 +38,10 @@ namespace main.Models.work.video {
         [BsonElement("color")] public string? color { get; set; }
         [BsonElement("sound_mix")] public string? sound_mix { get; set; }
         [BsonElement("camera")] public string? camera { get; set; }
+        [BsonElement("laboratory")] public string? laboratory { get; set; }
+        [BsonElement("negative_format")] public string? negative_format { get; set; }
+        [BsonElement("film_length")] public string? film_length { get; set; }
+        [BsonElement("cinematography_process")] public string? cinematography_process { get; set; }
+        [BsonElement("printed_film_format")] public string? printed_film_format { get; set; }
     }
 }

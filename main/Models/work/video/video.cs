@@ -35,7 +35,9 @@ namespace main.Models.work.video {
         [BsonElement("additional_crew")] public string? additional_crew { get; set; }
         [BsonElement("thanks")] public string? thanks { get; set; }
         [BsonElement("duration")] public string? duration { get; set; }
-        [BsonElement("aspect_ratio")] public string? aspect_ratio { get; set; }
+        [BsonElement("aspect_ratio")] public List<string>? aspect_ratio { get; set; }
+        [BsonElement("resolution")] public string? resolution { get; set; }
+        [BsonElement("frame_rate")] public string? frame_rate { get; set; }
         [BsonElement("color")] public string? color { get; set; }
         [BsonElement("sound_mix")] public List<string>? sound_mix { get; set; }
         [BsonElement("camera")] public List<string>? camera { get; set; }

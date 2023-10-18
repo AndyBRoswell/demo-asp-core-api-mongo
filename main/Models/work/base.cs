@@ -8,9 +8,11 @@
         [BsonRepresentation(BsonType.DateTime)][BsonElement("date")] public DateTime? date { get; set; }
         [BsonElement("language")] public string? language { get; set; }
         [BsonElement("publisher")] public string? publisher { get; set; }
+        [BsonElement("distributor")] public string? distributor { get; set; }
         [BsonElement("medium")] public string? medium { get; set; }
         [BsonElement("URL")] public string? URL { get; set; }
         [BsonElement("DOI")] public string? DOI { get; set; }
         [BsonElement("description")] public string? description { get; set; }
+        [BsonElement("tag")] public List<string>? tag { get; set; }
     }
 }

@@ -44,7 +44,7 @@ namespace main.Models.work.video {
         [BsonElement("laboratory")] public List<string>? laboratory { get; set; }
         [BsonElement("negative_format")] public List<string>? negative_format { get; set; }
         [BsonElement("film_length")] public string? film_length { get; set; }
-        [BsonElement("cinematographic_process")] public Dictionary<string, string>? cinematographic_process { get; set; }
+        [BsonElement("cinematographic_process")] public List<string>? cinematographic_process { get; set; }
         [BsonElement("printed_film_format")] public List<string>? printed_film_format { get; set; }
     }
 }

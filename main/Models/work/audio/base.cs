@@ -13,7 +13,6 @@ namespace main.Models.work.audio {
         [BsonElement("orchestra")] public string? orchestra { get; set; }
         [BsonElement("studio")] public string? studio { get; set; }
         [BsonRepresentation(BsonType.DateTime)][BsonElement("duration")] public TimeOnly? duration { get; set; }
-        [BsonElement("format")] public string? format { get; set; }
         [BsonElement("channel")] public int? channel { get; set; }
         [BsonElement("bit_depth")] public int? bit_depth { get; set; }
         [BsonElement("sample_rate")] public int? sample_rate { get; set; }

@@ -26,11 +26,16 @@ namespace main.Models.work.video {
         [BsonElement("makeup")] public string? makeup { get; set; }
         [BsonElement("stunt")] public string? stunt { get; set; }
         [BsonElement("animation")] public string? animation { get; set; }
-        [BsonElement("camera")] public string? camera { get; set; }
+        [BsonElement("camera_department")] public string? camera_department { get; set; }
         [BsonElement("electrical")] public string? electrical { get; set; }
         [BsonElement("location_management")] public string? location_management { get; set; }
         [BsonElement("transportation")] public string? transportation { get; set; }
         [BsonElement("additional_crew")] public string? additional_crew { get; set; }
         [BsonElement("thanks")] public string? thanks { get; set; }
+        [BsonElement("duration")] public string? duration { get; set; }
+        [BsonElement("aspect_ratio")] public string? aspect_ratio { get; set; }
+        [BsonElement("color")] public string? color { get; set; }
+        [BsonElement("sound_mix")] public string? sound_mix { get; set; }
+        [BsonElement("camera")] public string? camera { get; set; }
     }
 }

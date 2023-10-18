@@ -36,12 +36,12 @@ namespace main.Models.work.video {
         [BsonElement("duration")] public string? duration { get; set; }
         [BsonElement("aspect_ratio")] public string? aspect_ratio { get; set; }
         [BsonElement("color")] public string? color { get; set; }
-        [BsonElement("sound_mix")] public string? sound_mix { get; set; }
-        [BsonElement("camera")] public string? camera { get; set; }
-        [BsonElement("laboratory")] public string? laboratory { get; set; }
-        [BsonElement("negative_format")] public string? negative_format { get; set; }
+        [BsonElement("sound_mix")] public List<string>? sound_mix { get; set; }
+        [BsonElement("camera")] public List<string>? camera { get; set; }
+        [BsonElement("laboratory")] public List<string>? laboratory { get; set; }
+        [BsonElement("negative_format")] public List<string>? negative_format { get; set; }
         [BsonElement("film_length")] public string? film_length { get; set; }
-        [BsonElement("cinematography_process")] public string? cinematography_process { get; set; }
-        [BsonElement("printed_film_format")] public string? printed_film_format { get; set; }
+        [BsonElement("cinematography_process")] public Dictionary<string, string>? cinematography_process { get; set; }
+        [BsonElement("printed_film_format")] public List<string>? printed_film_format { get; set; }
     }
 }
